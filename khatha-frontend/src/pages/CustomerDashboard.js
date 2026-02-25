@@ -13,6 +13,8 @@ const CustomerDashboard = () => {
      <br /> <br />
      <button onClick={()=>navigate(`/get-purchases/${_id}`)}>Get Purchases</button>
      <button onClick={()=>navigate(`/get-payments/${_id}`)}>Get Payments</button>
+     <button onClick={()=>navigate('/pay')}>Pay Now</button>
+     <button onClick={()=>navigate('/my-due')}>View My Due</button>
     </>
   );
 };

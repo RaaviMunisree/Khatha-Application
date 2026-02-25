@@ -34,7 +34,6 @@ const GetPayments = () => {
           <thead>
             <tr>
               <th>Date</th>
-              <th>Item</th>
               <th>Cost</th>
             </tr>
           </thead>
@@ -42,13 +41,11 @@ const GetPayments = () => {
             {payments.map((item, index) => (
               <tr key={index}>
                 <td>{new Date(item.date).toLocaleDateString('en-GB')}</td>
-                <td>{item.name}</td>
                 <td>₹{item.cost}</td>
               </tr>
             ))}
             <tr className="total-row">
               <th>Amount</th>
-              <th>Total</th>
               <th>₹{sum}</th>
             </tr>
           </tbody>

@@ -51,6 +51,9 @@ const ViewCustomers = () => {
                 <td>
                   <button onClick={() => navigate(`/get-payments/${item._id}`)}>Get Payments</button>
                 </td>
+                <td>
+                  <button onClick={() => navigate(`/customer-due/${item._id}`)}>View Due</button>
+                </td>
               </tr>
             ))}
           </tbody>

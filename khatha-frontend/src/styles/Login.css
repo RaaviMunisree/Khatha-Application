@@ -3,7 +3,9 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #f2f4f8;
+  background: linear-gradient(0deg, rgba(242,244,248,0.9), rgba(242,244,248,0.9)), url('https://images.unsplash.com/photo-1518544887876-1f7f7c1f4e3a?q=80&w=1600&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

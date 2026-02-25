@@ -11,6 +11,9 @@ import AddPayment from "./pages/AddPayment";
 import GetPurchases from "./pages/GetPurchases";
 import GetPayments from "./pages/GetPayments";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import PayNow from "./pages/PayNow";
+import ViewDues from "./pages/ViewDues";
+import MyDue from "./pages/MyDue";
 
 function App() {
   return (
@@ -27,6 +30,10 @@ function App() {
         <Route path='/add-payment/:customerId' element={<ProtectedRoute><AddPayment /></ProtectedRoute>}/>
         <Route path='/get-purchases/:customerId' element={<ProtectedRoute><GetPurchases /></ProtectedRoute>}/>
         <Route path='/get-payments/:customerId' element={<ProtectedRoute><GetPayments /></ProtectedRoute>}/>
+        <Route path='/pay' element={<ProtectedRoute><PayNow /></ProtectedRoute>}/>
+        <Route path='/view-dues' element={<ProtectedRoute><ViewDues /></ProtectedRoute>}/>
+        <Route path='/my-due' element={<ProtectedRoute><MyDue /></ProtectedRoute>}/>
+        <Route path='/customer-due/:customerId' element={<ProtectedRoute><MyDue /></ProtectedRoute>}/>
 
       </Routes>
      </Router>

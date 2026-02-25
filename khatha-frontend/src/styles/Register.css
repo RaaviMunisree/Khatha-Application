@@ -7,7 +7,9 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f7fb;
+  background: linear-gradient(0deg, rgba(244,247,251,0.9), rgba(244,247,251,0.9)), url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=1600&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
   color: #333;
   display: flex;
   justify-content: center;

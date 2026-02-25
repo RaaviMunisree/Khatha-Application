@@ -11,6 +11,7 @@ const OwnerDashboard = () => {
       <div className="dashboard-buttons">
         <button onClick={() => navigate('/view-customers')}>View Customers</button>
         <button onClick={() => navigate('/add-customer')}>Add Customer</button>
+        <button onClick={() => navigate('/view-dues')}>View Dues</button>
       </div>
     </div>
   );

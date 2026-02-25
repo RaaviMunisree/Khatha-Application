@@ -1,0 +1,36 @@
+.paynow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background: linear-gradient(135deg, #eef4ff, #ffffff);
+}
+.paynow-form {
+  background: #fff;
+  padding: 30px 24px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.paynow-form h2 {
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+.paynow-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid #d8dce6;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.paynow-form button {
+  width: 100%;
+  padding: 12px;
+  background: #007BFF;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
