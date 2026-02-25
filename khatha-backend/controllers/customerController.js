@@ -42,7 +42,7 @@ exports.getCustomers=async(req,res)=>{
     console.log(shopName);
     const role="customer";
     try{
-        const customers=await User.find({shopName,role});
+        const customers=await User.find({shopName,role}).lean();
         if(customers.length==0){
             return res.status(404).json({ message: "No customers found for this shop." });
         }

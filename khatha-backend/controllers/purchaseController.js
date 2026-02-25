@@ -24,7 +24,7 @@ exports.getPurchases= async (req,res)=>{
     try{
       const existing=await User.findById({ _id });
       if(!existing) return res.json({message:"User doesnot exist"});
-      const purchases=await Purchase.find({customer:_id});
+      const purchases=await Purchase.find({customer:_id}).sort({date:-1}).lean();
       return res.json(purchases);
     }
     catch(err){

@@ -6,4 +6,5 @@ const PurchaseSchema=new mongoose.Schema({
     name:{type:String,required:true},
     cost:{type:Number,required:true}
 });
+PurchaseSchema.index({customer:1,date:-1});
 module.exports= mongoose.model("Purchase",PurchaseSchema);

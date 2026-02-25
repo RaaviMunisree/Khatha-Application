@@ -7,5 +7,7 @@ const UserSchema=new mongoose.Schema({
     role:{type:String,required:true},
     shopName:{type:String,required:true}
 })
+UserSchema.index({mobile:1,shopName:1});
+UserSchema.index({shopName:1,role:1});
 
 module.exports = mongoose.model("User", UserSchema);

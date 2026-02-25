@@ -4,4 +4,5 @@ const PaymentSchema=new mongoose.Schema({
     date:{type: Date,default: Date.now,},
     cost:{type:Number,required:true}
 });
+PaymentSchema.index({customer:1,date:-1});
 module.exports=mongoose.model("Payment",PaymentSchema);
